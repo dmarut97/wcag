@@ -1,0 +1,21 @@
+nav, header, div, .row-header, .container-photo, .container-kontakt, .container-logo, main, footer{
+  background-color: yellow!important;
+}
+
+#hadwa, nav, header, div, .nav-link, .carousel-caption, h3{
+  color:black!important;
+}
+tr:nth-child( odd ) {  
+  background-color: yellow!important;
+ 
+}
+tr:nth-child( even ) { 
+  background-color: yellow!important;
+ 
+}
+tr:first-child {
+ 
+  background-color: yellow!important;
+  color: black!important;
+}
+

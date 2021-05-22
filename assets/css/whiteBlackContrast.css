@@ -1,0 +1,16 @@
+nav, header, div, .row-header, .container-photo, .container-kontakt, .container-logo, main, footer{
+  background-color: black!important;
+}
+
+#hadwa, nav, header, div, .nav-link, .carousel-caption, h3{
+  color:white!important;
+}
+
+tr:nth-child( odd ) {  
+  background-color: black!important;
+ 
+}
+tr:nth-child( even ) { 
+  background-color: black!important;
+ 
+}

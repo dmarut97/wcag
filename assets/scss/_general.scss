@@ -1,0 +1,12 @@
+// General Style
+.special-width .container {
+  @media (min-width: 993px) {
+      max-width: 1920px !important;
+  }
+}
+
+html body {
+  font-size: 18px;
+  font-family: 'Poppins' !important;
+}
+
