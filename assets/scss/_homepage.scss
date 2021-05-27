@@ -1,4 +1,8 @@
 //SEKCJA HEADER
+header {
+  text-align: center!important;
+}
+
 .row-header {
   padding-bottom: 20px;
   padding-top: 20px;
@@ -18,13 +22,17 @@
     color: #1A237E;
     transition: color 1s ease-out;
   }
+
+  & div {
+    margin-bottom: 15px;
+  }
 }
 
 .language {
   text-align: center;
 
   @media (max-width: 767px) {
-    text-align: left;
+    text-align: center;
   }
 }
 
@@ -61,7 +69,28 @@ input[type="submit" i] {
   align-items: center;
 
   & li {
-    width: 177px;
+    width: 210px;
+  }
+}
+
+@media (max-width: 991px){
+  .ul-nav-justify li {
+    width: 210px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1150px) {
+  .ul-nav-justify li {
+    width: 191px;
+  }
+
+  .nav-item {
+    margin: 0px!important;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0px;
+    padding-left: 0px;
   }
 }
 
@@ -70,7 +99,8 @@ input[type="submit" i] {
 }
 
 .menu-nav .nav-item { 
-
+  
+  margin: 5px;
   border-radius: 5px;
 
   & a {

@@ -165,10 +165,7 @@ gulp.task("default", gulp.series("clean", "build", "replaceHtmlBlock"));
 gulp.task('serve', function () {
   return browserSync({
     server: {
-      baseDir: './',
-      startPath: "/index.html",
-      host:'localhost',
-      port: 3000
+      baseDir: './'
       //middleware: [historyFallback()]
     },
     port: 3000

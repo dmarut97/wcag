@@ -9733,8 +9733,11 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 html body {
-  font-size: 18px;
   font-family: 'Poppins' !important;
+}
+
+header {
+  text-align: center !important;
 }
 
 .row-header {
@@ -9758,13 +9761,17 @@ html body {
   transition: color 1s ease-out;
 }
 
+.row-header div {
+  margin-bottom: 15px;
+}
+
 .language {
   text-align: center;
 }
 
 @media (max-width: 767px) {
   .language {
-    text-align: left;
+    text-align: center;
   }
 }
 
@@ -9801,7 +9808,26 @@ input[type="submit" i] {
 }
 
 .ul-nav-justify li {
-  width: 177px;
+  width: 210px;
+}
+
+@media (max-width: 991px) {
+  .ul-nav-justify li {
+    width: 210px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1150px) {
+  .ul-nav-justify li {
+    width: 191px;
+  }
+  .nav-item {
+    margin: 0px !important;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -9809,6 +9835,7 @@ input[type="submit" i] {
 }
 
 .menu-nav .nav-item {
+  margin: 5px;
   border-radius: 5px;
 }
 

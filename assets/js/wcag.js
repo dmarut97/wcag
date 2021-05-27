@@ -23,7 +23,7 @@ function setActiveStyleSheet(title) {
 function setFontSize(){
 	var czcionka = readCookie("czcionka");
 	if(czcionka) {
-		$("html").css('font-size', czcionka);
+		$("html").css('font-size', czcionka ,'!important');
 	}
 	else {
 		document.getElementsByTagName("html")[0].style.fontSize = "18px";
@@ -56,7 +56,7 @@ function ustaw_kontrast() {
 
 function ustaw_czcionke() {	
 	$('#defaultFont').click(function() {
-		$("html").css('font-size', '18px');
+		$("html").css('font-size', '18px','!important');
 		Cookies.set("czcionka", $("html").css('font-size'), { expires: 365 });
 		return false;
 	});

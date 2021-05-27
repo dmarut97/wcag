@@ -1,0 +1,39 @@
+
+ <?php
+session_start();
+if(!isset($_POST['btn-val']))
+{
+    echo "Błąd przesłania posta";
+    header("Refresh:5; URL=aktualnosci.php");
+}
+
+else
+{
+    $id_art = intval($_POST['id_art']);
+    $temat = $_POST['temat'];
+    $opis = $_POST['opis'];
+    include 'id.php';
+    $id = intval($id_temp);
+    if($temat=="" || $opis=="")
+    {
+        echo "Uzupełnij oba pola Temat i Opis";
+        header("Refresh:5; URL=aktualnosci.php");
+    }
+    else
+    {
+        $conn = mysqli_connect('localhost','root','','praca_inzy');
+        mysqli_select_db($conn,'praca_inzy') or die("Problem z bazą danych");
+
+        $query="INSERT INTO posty VALUE
+          (null,'$temat','$opis','$id','$id_art')";
+                
+        $zapytanie= mysqli_query($conn,$query);
+
+        echo "Pomyślnie dodano komentarz";
+        header("Refresh:5; URL=aktualnosci.php");
+        mysqli_close($conn);  
+    }
+       
+}
+
+?>
